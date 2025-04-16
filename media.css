@@ -1,0 +1,192 @@
+@media (width < 1172px) {
+    
+
+
+    header {
+        padding: 30px 20px;
+    }
+
+
+    .f-text { 
+        padding-left: 90px;
+        
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    
+
+}
+
+
+
+@media (width < 1067px) {
+    header ul a {
+        font-size: 0.8rem;
+        padding-right: 10px;
+    }
+
+   
+    header {
+        padding: 12px 4%;
+    }
+
+    section .container img {
+        right: 100px;
+    }
+
+    .f-text h1 {
+        font-size: 2.2rem;
+    }
+
+
+    .about img{
+        width: 100%;
+    }
+
+    
+
+   
+}
+
+@media (width < 908px) {
+    section .container img {
+        right: 50px;
+    }
+
+    header {
+        padding: 12px 2%;
+    }
+
+    header ul a {
+        font-size: 0.7rem;
+      padding: 15px 10px;
+    }
+
+    .f-text h1 {
+        font-size: 2rem;
+    }
+
+   
+}
+
+@media ( width < 835px) {
+    .products-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px,auto));
+    }
+
+    .products-container .box > img  {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media ( width < 818px)  {
+    section .container img {
+        width: 50%;
+        top: 40%;
+    }
+
+
+    section .container {
+       display: block;
+       padding-top: 100px;
+      
+    }
+
+    .f-text {
+        padding: 0;
+        margin: auto;
+        width: 60%;
+    }
+
+}
+
+
+@media ( width < 818px) {
+    header ul li {
+        margin-right: 0;
+    }
+}
+
+
+@media ( width < 738px) {
+    header .nonemen {
+        display: none;
+    }
+
+    header .ham {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile  {
+        margin-right: 100px;
+    }
+
+    .catogories .heading {
+        display: block;
+    }
+
+
+    .catogories >.heading .btn {
+        margin: 20px 0;
+    }
+}
+
+
+@media (width < 543px) {
+    section .container img {
+        top: 50%;
+    }
+}
+
+
+@media (width < 461px) {
+    .f-text {
+        width: 80%;
+    }
+
+    .f-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .f-text span {
+        font-size: 15px;
+    }
+
+    section .container img {
+        width: 70%;
+    }
+
+    .catogories .heading h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+@media ( width < 452px) {
+      .profile {
+        display: none;
+    }
+}
+
+
+@media ( width < 360px) {
+    .catogories .heading {
+        padding: 10px 20px;
+    }
+
+
+    html,body {
+        width: 100vw;
+    }
+}
+
+
+
+
+
