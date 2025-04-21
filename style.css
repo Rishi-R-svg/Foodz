@@ -29,6 +29,10 @@ html,body{
 
 
 
+
+
+
+
 header {
     width: 100%;
     position: fixed;
@@ -37,7 +41,7 @@ header {
     align-items: center;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1001;
     box-shadow: 0 8px 11px rgba(0, 0, 0, 0.2);
     padding: 20px 100px; 
      transition: 0.2s;
@@ -333,7 +337,7 @@ header .ham {
     width: 40px;
     position: absolute;
     right: 30px;
-    z-index: 1000;
+    z-index: 1009;
     
     display: none;
 
@@ -414,13 +418,16 @@ header .ham-menu {
     width: 300px;
     padding-top: 150px;
     background-color: rgb(109, 6, 6);
-    z-index: 1000;
+   
     transition: 0.3s;
     
 }
 
 header .ham-menu.active {
     right: 0;
+    z-index: 1008;
+    
+
     
 }
 
@@ -450,6 +457,104 @@ header .ham-menu ul li a {
 header .ham-menu ul li a::before {
     background-color: white;
     left: 8%;
+    
+}
+
+.livecart {
+    position: fixed;
+    width: 100%;
+    
+   background: linear-gradient(45deg,black,rgb(139, 13, 13));
+    height: 30vh;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    transition: 0.4s;
+    display: none;
+    padding: 20px;
+
+}
+
+.livecart.show {
+    display: block;
+}
+
+
+
+
+
+.livecart span {
+    transform: rotate(45deg);
+    color: white;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    cursor: pointer;
+}
+
+.livecart ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    
+    position: relative;
+    gap: 2rem;
+   
+    padding: 0 20px;
+    overflow-x: scroll;
+
+}
+
+.livecart ul::-webkit-scrollbar{
+   background-color: transparent;
+   height: 5px;
+  
+}
+
+.livecart ul::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 8px;
+    border-radius: 20px;
+}
+
+.livecart img {
+    width: 120px;
+    height: 100px;
+    border-radius: 10px;
+    
+}
+
+.livecart li {
+    background-color: rgba(255, 255, 255);
+    height: fit-content;
+    min-width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   
+}
+
+
+
+.livecart li h2 {
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+
+.livecart li h3 {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(201, 24, 24, 0.884);
 }
 
 
@@ -464,6 +569,16 @@ header .ham-menu ul li a::before {
 
 
 
+
+
+
+
+
+
+
+
+
+/* <----------Main---------> */
 
 .catogories {
     width: 100%;
@@ -668,6 +783,8 @@ header .ham-menu ul li a::before {
 }
 
 
+
+
 .products .more a img {
     height: 100%;
     width: 100%;
@@ -680,15 +797,15 @@ header .ham-menu ul li a::before {
 
 
 .products .more {
-    width: 100%;
+    margin: auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    position: relative;
 }
 
-
-
-.products .more .btn {
+.products .more .less {
     padding: 0.6rem 1rem;
     background-color: rgba(201, 24, 24, 0.884);
     color: white;
@@ -701,13 +818,114 @@ header .ham-menu ul li a::before {
     column-gap: 0.5rem;
     max-width: 160px;
     transition: 0.3s all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 0.8rem;
+
 }
+
+
+
+.products .more a span {
+    position: relative;
+    height: 25px;
+    width: 50px;
+}
+
+
+
+
+.products .more a img {
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 50px;
+}
+
+
+
+
+
+.products .more >.btn {
+    padding: 0.6rem 1rem;
+    background-color: rgba(201, 24, 24, 0.884);
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    max-width: 160px;
+    transition: 0.3s all;
+    
+}
+
+
+
+
+
+
 
 
  .products .more .btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
 }
+
+
+.products .more .less {
+    background-color: rgba(201, 24, 24);
+    padding: 0.6rem 1.2rem;
+   
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    color: white;
+    display: none;
+    font-size: 1.2rem;
+    text-align: end;
+    transition: 0.3s;
+  
+    
+}
+
+.products .more .less:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+.products .more .less.active {
+   z-index: 10;
+   display: block;
+}
+
+
+
+.products .more button img {
+    height: 50%;
+    width: 50%;
+    z-index: 10;
+    position: absolute;
+    top: 25%;
+   left: -5%;
+    font-size: 50px;
+    transform: rotate(-180deg);
+
+} 
+
 
 
 
@@ -732,6 +950,259 @@ header .ham-menu ul li a::before {
     margin-top: 1rem;
 }
 
+
+/* ----------------after container-------------- */
+
+.products .afterbox {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,auto));
+    width: 70%;
+    display: none;
+    
+    margin: auto;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    transition: 0.3s ease;
+}
+
+.products .afterbox.active { 
+
+    display: grid;
+    transition: 0.3s ease;
+
+}
+
+
+/* --------------------popup box--------------- */
+.popupfav {
+    position: fixed; 
+    top: -10%;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.popupfav p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.popupfav p span {
+    color: rgba(201, 24, 24, 0.884);
+}
+
+
+.popupfav.active {
+  
+   top: 10%;
+  
+   
+}
+
+
+
+
+.popupcart {
+    position: fixed; 
+    top: -10%;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.popupcart p {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.popupcart p span {
+    color: rgba(201, 24, 24, 0.884);
+}
+
+
+.popupcart.active {
+  
+   top: 10%;
+  
+   
+}
+
+/* -------------------------popup end -------------------- */
+
+
+
+.products .afterbox .box {
+    padding: 20px;
+    box-shadow: 1px 2px 11px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+
+
+.products .afterbox .box> img {
+    width: 250px;
+    object-fit: contain;
+    object-position: center;
+    margin: 10px 0;
+} 
+
+.products .afterbox .box .cimage {
+    display: flex;
+    width: 30%;
+    height: 30px;
+    justify-content: space-between;
+    
+    margin: 20px 0;
+
+    
+
+}
+
+
+
+.products .afterbox .box .cimage .assets {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+
+
+} 
+
+
+
+
+
+.products .afterbox .box .cimage .assets img {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.products .afterbox .box .cimage .heart.active {
+    background: url(images/after\ heart.svg);
+    background-size: cover;
+    /* height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+   
+}
+
+
+
+.products .afterbox .box > span {
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+
+
+.products .afterbox .box h2 {
+    font-size: 1.2rem;
+    font-weight: 599;
+    /* margin-top: 0.5rem;
+    color: rgba(201, 24, 24, 0.5); */
+}
+
+
+
+.products .afterbox .box h5 {
+    color: rgba(0, 0, 0, 0.7);
+}
+.products .afterbox .box .price {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    color: rgba(201, 24, 24, 0.5);
+}
+
+
+.products .afterbox .box .price span {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.products .afterbox .box .cimage .cart {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 0.5rem 0 0.5rem 0;
+    transition: 0.2s;
+
+}
+
+
+.products .afterbox .box .cimage .cart:hover {
+    background-color: rgba(201, 24, 24, 0.884);
+}
+
+
+
+
+.products .afterbox .box .cimage .cart img {
+    height: 50%;
+    width: 50%;
+}
+
+.products .afterbox .box .cimage .heart {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.products .afterbox .box .cimage .heart img{
+   height: 100%;
+   width: 100%;
+}
+
+
+
+.products .afterbox .box .discount {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    background-color: rgba(201, 24, 24, 0.884);
+    color: white;
+    padding: 5px 15px;
+    clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 4%);
+
+    padding-left: 5px;
+    padding-right: 20px;
+}
+
+
+
+
+/* ---------------------------after-box end----------------- */
 
 .products-container .box {
     padding: 20px;
@@ -769,6 +1240,8 @@ header .ham-menu ul li a::before {
 
 
 }
+
+
 
 .products-container .box .cimage .assets img {
     height: 100%;

@@ -26,6 +26,8 @@
             <li><a href="#products">products</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#customers">customer</a></li>
+            <li><a href="#" class="cartbox">Cart</a></li>
+
             
 
            </ul>
@@ -47,6 +49,9 @@
             <li><a href="#products">products</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#customers">customer</a></li>
+            <li><a href="#products" class="cartbox">Cart</a></li>
+            
+            
            </ul>
          </div>
 
@@ -74,6 +79,25 @@
 
 
     <main>
+
+        <section class="popupfav"></section>
+        <section class="popupcart"></section>
+        <section class="livecart">
+          
+            <ul class="appendli">
+                <!-- <li>
+                    <img src="images/brinjal.jpg" alt="">
+                    <h2>Brinjal</h2>
+                    <h3>100$</h3>
+                </li> -->
+            </ul>
+        </section>
+        
+          
+        
+
+       
+
         <section class="home swiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide container">
@@ -191,14 +215,14 @@
         <div class="box">
             <img src="images/p1.png" alt="">
             <h5>Fresh items</h5>
-            <h2>Farm Fresh <br> Fruits 250g</h2>
+            <h2>Apple's</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
-                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="" class="carto">
                 </div>
-                <div class="heart assets">
-                   <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                   <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
                
             </div>
@@ -210,14 +234,14 @@
         <div class="box">
             <img src="images/p2.png" alt="">
             <h5>Frest items</h5>
-            <h2>Farm Fresh <br> Fruits 250g</h2>
+            <h2>Passion Fruit</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
+                <div class="cart assets" data-added >
                     <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
                 </div>
-                <div class="heart assets">
-                    <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
               
             </div>
@@ -229,14 +253,14 @@
         <div class="box">
             <img src="images/p3.png" alt="">
             <h5>Fresh items</h5>
-            <h2 class="alter">Farm Fresh <br> Fruits 250g</h2>
+            <h2 class="alter">Carrot</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
+                <div class="cart assets" data-added >
                     <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
                 </div>
-                <div class="heart assets">
-                    <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
                
             </div>
@@ -248,14 +272,14 @@
         <div class="box">
             <img src="images/p4.png" alt="">
             <h5>Fresh items</h5>
-            <h2>Farm Fresh <br> Fruits 250g</h2>
+            <h2>Strawberry</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
+                <div class="cart assets" data-added >
                     <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
                 </div>
-                <div class="heart assets">
-                    <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
                
             </div>
@@ -266,14 +290,14 @@
         <div class="box">
             <img src="images/p5.png" alt="">
             <h5>Fresh items</h5>
-            <h2>Farm Fresh <br> Fruits 250g</h2>
+            <h2>Cherry</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
+                <div class="cart assets" data-added >
                     <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
                 </div>
-                <div class="heart assets">
-                    <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
                 
             </div>
@@ -285,22 +309,490 @@
         <div class="box">
             <img src="images/p6.png" alt="">
             <h5>Fresh items</h5>
-            <h2>Farm Fresh <br> Fruits 250g</h2>
+            <h2>Potato</h2>
             <h3 class="price">100₹ <span>/kg</span></h3>
             <div class="cimage">
-                <div class="cart assets">
+                <div class="cart assets" data-added >
                     <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
                 </div>
-                <div class="heart assets">
-                    <img src="images/heart-svgrepo-com.svg" alt="">
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
                 </div>
                 
             </div>
             <span class="discount" >-25%</span>
             
         </div>
+
+
+
+
     </div>
-    <div class="more">  <a href="" class="btn">See all <span><img src="images/right-arrow-svgrepo-com.svg" alt=""></span></a></div>
+
+
+
+    
+
+    <div class="afterbox">
+
+
+        <div class="box">
+            <img src="images/brinjal.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Brinjal</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/Silantro.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Coriander</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/cabbage.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Cabbage</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/beetroot.webp" alt="">
+            <h5>Fresh items</h5>
+            <h2>Beetroot</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/Beans.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Beans</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/pumkin.webp" alt="">
+            <h5>Fresh items</h5>
+            <h2>Pumpkin</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/red capsicum.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Red Capsicum</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+        <div class="box">
+            <img src="images/ladyfinger.webp" alt="">
+            <h5>Fresh items</h5>
+            <h2>Ladyfinger</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+        
+        <div class="box">
+            <img src="images/long.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Long pepper cloves</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/carrot.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>American Carrot's</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/Chilli.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Green chilli Pepper</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/tomatos.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Tomato's</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/mango.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Mango's</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/strawberry.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Japanese Strawberry</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/papaya.jpg" alt=""  style="mix-blend-mode: multiply;">
+            <h5>Fresh items</h5>
+            <h2>Papaya</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/peaches.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Peaches</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/grapes.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Grapes</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/dragon fruit.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Dragon fruit</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+        <div class="box">
+            <img src="images/elichi.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Cardamom</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+
+        <div class="box">
+            <img src="images/flower spice.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Star anise</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+
+        <div class="box">
+            <img src="images/lemon.jpg" alt="" >
+            <h5>Fresh items</h5>
+            <h2>Lime</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+
+
+
+
+        <div class="box">
+            <img src="images/lichi.jpg" alt="">
+            <h5>Fresh items</h5>
+            <h2>Litchi</h2>
+            <h3 class="price">100₹ <span>/kg</span></h3>
+            <div class="cimage">
+                <div class="cart assets" data-added >
+                    <img src="images/cart-shopping-fast-svgrepo-com.svg" alt="">
+                </div>
+                <div class="heart assets" data-added>
+                    <img src="images/heart-svgrepo-com.svg" alt="" class="favor">
+                  
+                </div>
+                
+            </div>
+            <span class="discount" >-25%</span>
+            
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="more"> 
+         <a href="" class="btn" id="RemoveAttribute">See all <span><img src="images/right-arrow-svgrepo-com.svg" alt=""></span></a>
+         <button  class="less" ><span><img src="images/right-arrow-svgrepo-com.svg" alt=""></span>See less</button>
+        
+    </div>
 </section>
 
 
