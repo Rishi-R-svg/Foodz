@@ -72,6 +72,41 @@
    
 }
 
+
+@media(width<911px){
+    .livecart {
+        flex-direction: column;
+        height: 40vh;
+       
+    }
+
+    .livecart ul {
+        width: 100%;
+        height: 80%;
+        margin-bottom: 20px;
+        
+    }
+
+    .livecart .cart-total {
+        width: 100%;
+        display: flex;
+       flex-direction: row;
+       justify-content: center;
+       gap: 2rem;
+
+       
+    }
+
+    .livecart .cart-total button {
+        padding: 10px 40px;
+    }
+
+   
+}
+
+
+
+
 @media ( width < 835px) {
     .products-container {
         grid-template-columns: repeat(auto-fit, minmax(250px,auto));

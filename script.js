@@ -140,57 +140,6 @@ arr.forEach((e)=>{
 
 
 
-// <---------cartbtn---------->
-
-
-// const CartBtnNode = document.querySelectorAll('.cart');
-// const PopupCart = document.querySelector('.popupcart')
-
-// const CartBtnArr = Array.from(CartBtnNode)
-
-// CartBtnArr.forEach((button)=>{
-//   button.setAttribute('data-added','false')
-
-//   button.addEventListener('click',(event)=> {
-
-//     let btn = event.currentTarget;
-
-//     console.log(btn);
-
-//     let product = btn.closest('.box')
-
-//     let productName = product.querySelector('h2').innerText;
-
-//     let isadded = btn.getAttribute('data-added')
-
-//     if (isadded === 'false') {
-
-//       PopupCart.innerHTML = `<p> <span>${productName}</span> added to Cart </p>`
-//       btn.setAttribute('data-added','true')
-      
-//     }
-
-
-//     else {
-//       PopupCart.innerHTML = `<p> <span>${productName}</span> removed from Cart </p>`
-//       btn.setAttribute('data-added','false')
-//     }
-
-    
-//     PopupCart.classList.add('active')
-
-//     setTimeout(() => {
-//       PopupCart.classList.remove('active')
-//     }, 2000);
-
-
-
-
-//   })
-
-
-// })
-
 
 
 const ShowCartBox = document.querySelectorAll('.cartbox')
@@ -208,13 +157,6 @@ ArrOfCartbox.forEach((btn)=> {
    CartBox.classList.toggle('show')
   })
 })
-
-
-
-
-
-
-
 
 
 
@@ -282,20 +224,10 @@ CartArr.forEach((button)=>{
 
     removebtn.addEventListener('click',()=> {
       li.remove();
+      updatecarttotal()
+     
     })
 
-
-
-
-
-
-
-
-
-
-
-
-    
 
     let image = document.createElement('img')
 
@@ -310,6 +242,7 @@ CartArr.forEach((button)=>{
     h2.innerText = productName
      
     let h3 = document.createElement('h3')
+    h3.classList.add('item-price')
     h3.innerText = productPrice
 
 
@@ -323,13 +256,34 @@ CartArr.forEach((button)=>{
 
 
     addli.appendChild(li)
+    updatecarttotal()
     
 
 
 
+    
+   
+
+    function updatecarttotal() {
+      let total = 0;
+     
+      document.querySelectorAll('.cart-item').forEach((item)=> {
+        const txt = li.querySelector('.item-price').innerText;
+        total+=parseFloat(txt);
+        
+    
+      });
+
+      document.querySelector('.show-total').innerText = `₹ ${total.toFixed(2)}`
+    
+    
+    }
+    
 
   });
 })
+
+
 
 
 
